@@ -2,7 +2,7 @@ package domain
 
 type MainSettings struct {
 	AppName string `envconfig:"APP_NAME" default:"nats_tire_service"`
-	Version string `envconfig:"VERSION"`
+	Version string `envconfig:"APP_VERSION"`
 	Env     string `envconfig:"ENV" default:"production"`
 }
 
@@ -24,7 +24,7 @@ type NATSSecurity struct {
 }
 
 type LoggerSettings struct {
-	LogLevel  string `envconfig:"LOG_LEVEL" default:"INFO"`
+	LogLevel  string `envconfig:"LOG_LEVEL" default:"debug"`
 	LogFile   string `envconfig:"LOG_FILE"`
 	LogFormat string `envconfig:"LOG_FORMAT" default:"console"` //json/console
 }
