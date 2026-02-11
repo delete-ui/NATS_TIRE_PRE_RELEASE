@@ -33,6 +33,11 @@ type ForkFoundEvent struct {
 	Payload Fork `json:"payload"`
 }
 
+type OddsUpdatedEvent struct {
+	EventHeader
+	Payload Odds `json:"payload"`
+}
+
 // AlertCreatedEvent
 type AlertCreatedEvent struct {
 	EventHeader
