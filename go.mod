@@ -3,7 +3,7 @@ module NATS_TIRE_SERVICE
 go 1.25.4
 
 require (
-	github.com/delete-ui/NATS_TIRE_LIBRARY v0.0.0-20260214144112-2618b8bec1dc
+	github.com/delete-ui/NATS_TIRE_LIBRARY v0.0.0-20260214165025-82d85800ce6f
 	github.com/joho/godotenv v1.5.1
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/nats-io/nats-server/v2 v2.12.4

@@ -6,6 +6,8 @@ github.com/delete-ui/NATS_TIRE_LIBRARY v0.0.0-20260214140635-6333f5c064ed h1:ro4
 github.com/delete-ui/NATS_TIRE_LIBRARY v0.0.0-20260214140635-6333f5c064ed/go.mod h1:QNOBIdlzKNLqfnoJj4rJvdq2xJStdiq/Kf20QgQwm4c=
 github.com/delete-ui/NATS_TIRE_LIBRARY v0.0.0-20260214144112-2618b8bec1dc h1:R5XbcxmJCBXqnJHeUSUMhRwzUQCCuzxfTMUvRcY0MYw=
 github.com/delete-ui/NATS_TIRE_LIBRARY v0.0.0-20260214144112-2618b8bec1dc/go.mod h1:QNOBIdlzKNLqfnoJj4rJvdq2xJStdiq/Kf20QgQwm4c=
+github.com/delete-ui/NATS_TIRE_LIBRARY v0.0.0-20260214165025-82d85800ce6f h1:CZS+fEYLagUVo7PBMjuViFk/VXx0wnEUHIQjWLUslLs=
+github.com/delete-ui/NATS_TIRE_LIBRARY v0.0.0-20260214165025-82d85800ce6f/go.mod h1:QNOBIdlzKNLqfnoJj4rJvdq2xJStdiq/Kf20QgQwm4c=
 github.com/google/go-tpm v0.9.8 h1:slArAR9Ft+1ybZu0lBwpSmpwhRXaa85hWtMinMyRAWo=
 github.com/google/go-tpm v0.9.8/go.mod h1:h9jEsEECg7gtLis0upRBQU+GhYVH6jMjrFxI8u6bVUY=
 github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
