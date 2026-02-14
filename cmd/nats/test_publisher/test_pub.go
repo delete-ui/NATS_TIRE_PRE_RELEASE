@@ -1,11 +1,10 @@
 package main
 
 import (
-	"NATS_TIRE_SERVICE/shared/config"
-	"NATS_TIRE_SERVICE/shared/nats"
-	"NATS_TIRE_SERVICE/shared/types"
 	"fmt"
-	"github.com/google/uuid"
+	"github.com/delete-ui/NATS_TIRE_LIBRARY/shared/config"
+	"github.com/delete-ui/NATS_TIRE_LIBRARY/shared/nats"
+	"github.com/delete-ui/NATS_TIRE_LIBRARY/shared/types"
 	"time"
 )
 
@@ -16,26 +15,32 @@ func main() {
 
 	client, err := nats.NewClient(cfg)
 	if err != nil {
-		panic(fmt.Sprintf("Ошибка подключения: %v", err))
+		panic(fmt.Sprintf("❌ Ошибка подключения: %v", err))
 	}
 	defer client.Close()
 
-	fmt.Println("✅ Издатель запущен, шлю сообщения...")
+	fmt.Println("✅ Издатель запущен, отправляю сообщения...")
+
+	correlationID := 1
 
 	for {
-		match := types.Match{
-			ID:    uuid.New().String(),
-			Sport: types.SportCSGO,
-			Teams: []string{"NaVi", "G2"},
+		bundle := types.MatchBundle{
+			CorrelationID: correlationID,
+			TeamNames:     []string{"NaVi", "G2"},
+			BookmakerBundle: map[types.Bookmaker]string{
+				types.BookmakerFonbet: "https://fonbet.ru/match/123",
+			},
 		}
 
-		err := client.PublishMatchFound(match)
+		err := client.PublishMatchBundle(bundle)
 		if err != nil {
-			fmt.Printf("❌ Ошибка: %v\n", err)
+			fmt.Printf("❌ Ошибка публикации: %v\n", err)
 		} else {
-			fmt.Printf("📤 Отправлен матч: %s\n", match.ID)
+			fmt.Printf("📤 Отправлен матч (correlation_id: %d): %v\n",
+				bundle.CorrelationID, bundle.TeamNames)
 		}
 
+		correlationID++
 		time.Sleep(5 * time.Second)
 	}
 }

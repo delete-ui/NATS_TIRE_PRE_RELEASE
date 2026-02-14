@@ -2,6 +2,10 @@ github.com/antithesishq/antithesis-sdk-go v0.5.0-default-no-op h1:Ucf+QxEKMbPogR
 github.com/antithesishq/antithesis-sdk-go v0.5.0-default-no-op/go.mod h1:IUpT2DPAKh6i/YhSbt6Gl3v2yvUZjmKncl7U91fup7E=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/delete-ui/NATS_TIRE_LIBRARY v0.0.0-20260214140635-6333f5c064ed h1:ro4Jgu4RLeeOY/jGdEewiPqifod7QgPEsRnTuR2GKRY=
+github.com/delete-ui/NATS_TIRE_LIBRARY v0.0.0-20260214140635-6333f5c064ed/go.mod h1:QNOBIdlzKNLqfnoJj4rJvdq2xJStdiq/Kf20QgQwm4c=
+github.com/delete-ui/NATS_TIRE_LIBRARY v0.0.0-20260214144112-2618b8bec1dc h1:R5XbcxmJCBXqnJHeUSUMhRwzUQCCuzxfTMUvRcY0MYw=
+github.com/delete-ui/NATS_TIRE_LIBRARY v0.0.0-20260214144112-2618b8bec1dc/go.mod h1:QNOBIdlzKNLqfnoJj4rJvdq2xJStdiq/Kf20QgQwm4c=
 github.com/google/go-tpm v0.9.8 h1:slArAR9Ft+1ybZu0lBwpSmpwhRXaa85hWtMinMyRAWo=
 github.com/google/go-tpm v0.9.8/go.mod h1:h9jEsEECg7gtLis0upRBQU+GhYVH6jMjrFxI8u6bVUY=
 github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=

@@ -3,8 +3,10 @@ module NATS_TIRE_SERVICE
 go 1.25.4
 
 require (
+	github.com/delete-ui/NATS_TIRE_LIBRARY v0.0.0-20260214144112-2618b8bec1dc
 	github.com/joho/godotenv v1.5.1
 	github.com/kelseyhightower/envconfig v1.4.0
+	github.com/nats-io/nats-server/v2 v2.12.4
 	go.uber.org/zap v1.27.1
 )
 
@@ -15,7 +17,6 @@ require (
 	github.com/klauspost/compress v1.18.3 // indirect
 	github.com/minio/highwayhash v1.0.4-0.20251030100505-070ab1a87a76 // indirect
 	github.com/nats-io/jwt/v2 v2.8.0 // indirect
-	github.com/nats-io/nats-server/v2 v2.12.4 // indirect
 	github.com/nats-io/nats.go v1.48.0 // indirect
 	github.com/nats-io/nkeys v0.4.12 // indirect
 	github.com/nats-io/nuid v1.0.1 // indirect
